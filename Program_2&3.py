@@ -11,14 +11,14 @@ for _ in range(0,1000):
   max = 99
   min = 0
   Cnt = 0
-  while min < max:
+  while min < max: # While迴圈不限制次數
     # print(f"({min},{max})?")
     n = random.randint(min, max)
     Cnt = Cnt + 1
     # print(n)
     if n == answer:
       # print("Bingo.")
-      if Cnt <= 7:
+      if Cnt <= 7: # 在7次內猜到才會記錄到Program3猜中的次數
         NaiveWinCntP3 = NaiveWinCntP3 + 1
       NaiveWinCntP2 = NaiveWinCntP2 + 1
       break
@@ -31,14 +31,14 @@ for _ in range(0,1000):
   max = 99
   min = 0
   Cnt = 0
-  while min < max:
+  while min < max: # While迴圈不限制次數
     # print(f"({min},{max})?")
     n = (min + max) // 2
     Cnt = Cnt + 1
     # print(n)
     if n == answer:
       # print("Bingo.")
-      if Cnt <= 7:
+      if Cnt <= 7: # 在7次內猜到才會記錄到Program3猜中的次數
         BSWinCntP3 = BSWinCntP3 + 1
       BSWinCntP2 = BSWinCntP2 + 1
       break
@@ -48,6 +48,7 @@ for _ in range(0,1000):
       else:
         max = n-1
 
+# Program 2和Program 3合在一起可以更好看出勝率變化的原因
 print("Program 2")
 print(f"Naive AI ({NaiveWinCntP2/1000})")
 print(f"Binary Search AI ({BSWinCntP2/1000})")
