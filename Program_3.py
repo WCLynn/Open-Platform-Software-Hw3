@@ -9,7 +9,7 @@ for _ in range(0,1000):
   max = 99
   min = 0
   Cnt = 0
-  while min < max and Cnt < 7:
+  while min < max and Cnt < 7: # 加入次數限制
     # print(f"({min},{max})?")
     n = random.randint(min, max)
     Cnt = Cnt + 1
@@ -27,7 +27,7 @@ for _ in range(0,1000):
   max = 99
   min = 0
   Cnt = 0
-  while min < max and Cnt < 7:
+  while min < max and Cnt < 7: # 加入次數限制
     # print(f"({min},{max})?")
     n = (min + max) // 2
     Cnt = Cnt + 1
