@@ -8,7 +8,7 @@ for _ in range(0,1000):
   # Program 2 Naive
   max = 99
   min = 0
-  while min < max:
+  while min < max: # 若只剩下一個整數(即min等於max)就結束遊戲
     # print(f"({min},{max})?")
     n = random.randint(min, max) # 玩家猜數字的部分用取隨機整數(範圍內)取代
     # print(n)
@@ -24,7 +24,7 @@ for _ in range(0,1000):
   # Program 2 Binary Search
   max = 99
   min = 0
-  while min < max:
+  while min < max: # 若只剩下一個整數(即min等於max)就結束遊戲
     # print(f"({min},{max})?")
     n = (min + max) // 2 # 玩家猜數字的部分用取中間整數(範圍內)取代
     # print(n)
