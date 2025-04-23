@@ -10,11 +10,11 @@ for _ in range(0,1000):
   min = 0
   while min < max:
     # print(f"({min},{max})?")
-    n = random.randint(min, max)
+    n = random.randint(min, max) # 玩家猜數字的部分用取隨機整數(範圍內)取代
     # print(n)
     if n == answer:
       # print("Bingo.")
-      NaiveWinCnt = NaiveWinCnt + 1
+      NaiveWinCnt = NaiveWinCnt + 1 # 將猜中answer的次數記錄下來以計算勝率
       break
     else:
       if n < answer:
@@ -26,11 +26,11 @@ for _ in range(0,1000):
   min = 0
   while min < max:
     # print(f"({min},{max})?")
-    n = (min + max) // 2
+    n = (min + max) // 2 # 玩家猜數字的部分用取中間整數(範圍內)取代
     # print(n)
     if n == answer:
       # print("Bingo.")
-      BSWinCnt = BSWinCnt + 1
+      BSWinCnt = BSWinCnt + 1 # 將猜中answer的次數記錄下來以計算勝率
       break
     else:
       if n < answer:
